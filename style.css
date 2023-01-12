@@ -10,7 +10,7 @@ body {
 #header	{
 	transition: 3s ease-out;
 	font-family: Montserrat;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	background: whitesmoke;
 }
