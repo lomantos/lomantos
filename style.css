@@ -190,3 +190,6 @@ img	{
 	border: none;
 	transition: 0.5s;
 }
+@media screen and (max-width: 768) {
+font-size: 15px;
+}
