@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- ADAPTIVE CSS -->
-	<link rel="stylesheet" type="text/css" href="adaptive.css">
-	<!-- ADAPTIVE CSS -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-	<title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lomantos</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Moul" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-	<div class="container">
-		<div id="home">
-			<div id="header">
-				<div id="header-logo"><a href="#header">lomantos</a></div>
-				<div id="header-ul">
-					<div id="header-li"><a href="#home-button">Обо мне</a></div>
-					<div id="header-li"><a href="#services">Услуги</a></div>
-					<div id="header-li"><a href="#contacts">Контакты</a></div>
-				</div>
-				</div>
-			<div id="home-hello">
-				<div id="home-hello-div">
-					<h1>Создаю сайты</h1>
-					<a href="tel:+79153724124" id="home-button">Позвонить</a>
-				</div>
-			</div>
+
+	<header>
+		<h2 id="logo"><a href="#">lomantos</a></h2>
+		<nav>
+			<li><a href="#">Портфолио</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Контакты</a></li>
+		</nav>
+	</header>
+
+
+	<section class="hero">
+		<div class="background-image"></div>
+		<h1>Создаю сайты
+            <br>любой сложности</h1>
+		<a href="tel:+79153724124" class="btn">Позвонить сейчас</a>
+	</section>
+
+
+	<section class="our-work">
+		<h3 class="title">Портфолио</h3>
+		<p>Можете увидеть несколько моих работ и узнать, подойду ли я вам.
+            <span><br>Работ пока нет, посмотрите на эти виды.</span></p>
+		<hr>
+
+		<ul class="grid">
+			<li class="large" style="background-image: url(img/coast.jpg);"></li>
+			<li class="large" style="background-image: url(img/island.jpg);"></li>
+			<li class="large" style="background-image: url(img/balloon.jpg);"></li>
 		</div>
-		<div class="container-orange" id="about">
-			<h1>Почему стоит выбрать меня?</h1>
-			<div id="about-after-div">
-				<div id="about-after-div-flex">
-					<div id="about-after-h1">
-						<img class="about-img" src="img/man.svg">
-						<img class="about-img-circle" class="about-img" src="img/projects.svg">
-						<img class="about-img-circle" class="about-img" src="img/score.svg">
-						<img class="about-img-circle" class="about-img" src="img/years.svg">
-					</div>
-				</div>
-			</div>
+	</section>
+	
+
+	<section class="features">
+		<h3 class="title">Услуги</h3>
+		<hr>
+
+		<ul class="grid">
+			<li class="smalli">
+				<i></i>
+				<h4>Доработка</h4>
+				<p>Доработка сайта до идеала под все требования.</p>
+			</li>
+			<li id="largei">
+				<i></i>
+				<h4>Корпоративный</h4>
+				<p>Многостраничный сайт для крупных предприятий.</p>
+			</li>
+			<li class="smalli">
+				<i></i>
+				<h4>Лендинг</h4>
+				<p>Одностраничный сайт с высокой эффективностью.</p>
+			</li>
 		</div>
-		<div id="work">
-			
-		</div>
-		<div id="discount">
-			
-		</div>
-		<div id="services">
-			
-		</div>
-		<div id="contacts">
-			
-		</div>
-	</div>
+	</section>
+
+
+
+	<section class="contact">
+		<h3 class="title">Если я вас заинтересовал, позвоните или оставьте почту.</h3>	
+		<p>Я отвечаю каждый день с 9 до 19 по МСК.</p>
+		<hr>
+
+		<form>
+			<input type="email" placeholder="Email">
+			<a href="#" class="btnn">Оставить почту</a>
+		</form>
+        <a href="tel:+79153724124" class="btn">Позвонить сейчас</a>
+	</section>
 </body>
+
 </html>
