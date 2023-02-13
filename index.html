@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <div id="body">
 	<header>
 		<h2 id="logo">lomantos</h2>
 		<nav>
@@ -42,7 +42,7 @@
 			<li class="large" style="background-image: url(img/coast.svg);"></li>
 			<li class="large" style="background-image: url(img/island.jpg);"></li>
 			<li class="large" style="background-image: url(img/balloon.jpg);"></li>
-		</div>
+        </ul>
 	</section>
 	
 
@@ -66,7 +66,7 @@
 				<h4>Лендинг</h4>
 				<p>Одностраничный сайт с высокой эффективностью.</p>
 			</li>
-		</div>
+        </ul>
 	</section>
 
    <section class="reviews">
@@ -89,13 +89,14 @@
 		</form>
         <a href="#hero" class="up">Наверх</a>
 	</section>
+</div>
     <script src="three.r134.min.js"></script>
 <script src="vanta.waves.min.js"></script>
 <script src="p5.min.js"></script>
 <script src="vanta.topology.min.js"></script>
 <script>
 VANTA.TOPOLOGY({
-  el: "#hero",
+  el: "#body",
   mouseControls: false,
   touchControls: false,
   gyroControls: false,

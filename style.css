@@ -93,6 +93,11 @@ section{
 	padding: 125px 100px;
 }
 
+section.contact{
+	padding: 125px 100px;
+	padding-bottom: 0px;
+}
+
 section.reviews{
 	display: flex;
 	flex-direction: column;
