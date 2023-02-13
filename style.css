@@ -26,7 +26,23 @@ a{
 	cursor: pointer;
 }
 
-
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #A78B73 #D3C0AF;
+}
+*::-webkit-scrollbar {
+	background-color: #D3C0AF;
+  height: 6px;
+  width: 18px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #D3C0AF;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #A78B73;
+  border-radius: 100px;
+  border: 4px solid #D3C0AF;
+}
 
 a.btn{
 	color: #fff;
@@ -35,8 +51,8 @@ a.btn{
 	font-weight: 700;
 	text-align: center;
 	font-size: 24px;
-	transition: 0.3s;
-	box-shadow: 0px 0px 20px #5A835D;
+	transition: 0.5s;
+	box-shadow: 0px 0px 20px #364F38;
 }
 
 a.btnn{
@@ -47,19 +63,22 @@ a.btnn{
 	text-align: center;
 	font-size: 24px;
 	transition: 0.3s;
+	padding: 10px 23px;
+	opacity: 0.95;
 }
 
-a.btnn{
-	padding: 10px 23px;
+a.btnn:hover{
+	transform: scale(1.05);
+	opacity: 1;
 }
 
 a.btn:hover {
-	box-shadow: none;
-	opacity: 0.8;
+	box-shadow: inset 0px 0px 20px #364F38;
+	opacity: 0.9;
 }
 
 hr{
-	width: 300px;
+	width: 150px;
 	height: 2px;
 	background-color: #5A835D;
 	border: 0;
@@ -74,10 +93,21 @@ section{
 	padding: 125px 100px;
 }
 
+section.reviews{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 62.5px 100px;
+}
+
 @media (max-width: 1000px){
 
 	section{
 		padding: 100px 50px;
+	}
+	section.reviews{
+		padding: 50px 50px;
 	}
 
 }
@@ -86,6 +116,9 @@ section{
 
 	section{
 		padding: 80px 30px;
+	}
+	section.reviews{
+		padding: 40px 30px;
 	}
 
 }
@@ -142,6 +175,7 @@ header a {
 
 header a:hover{
 	color: #5A835D;
+	text-decoration: underline;
 }
 #logo{
 	font-family: 'Moul', sans-serif;
@@ -191,7 +225,7 @@ header nav li:last-child{
  	Hero Section
 ----------------*/
 
-.hero{
+#hero{
 	position: relative;
 	justify-content: center;
 	min-height: 100vh;
@@ -199,7 +233,7 @@ header nav li:last-child{
 	text-align: center;
 }
 
-.hero .background-image{
+#hero .background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -210,7 +244,7 @@ header nav li:last-child{
 	z-index: -1;
 }
 
-.hero h1{
+#hero h1{
 	font: bold 60px 'Yantramanav', sans-serif;
 	margin-bottom: 55px;
 	font-size: 96px;
@@ -229,15 +263,15 @@ a.btn{
 /*	 {
 
 	}*/
-	.hero{
+	#hero{
 		min-height: 600px;
 	}
 
-	.hero h1{
+	#hero h1{
 		font-size: 48px;
 	}
 
-	.hero a.btn{
+	#hero a.btn{
 		padding: 15px 40px;
 	}
 
@@ -265,11 +299,11 @@ a.btn{
 
 }
 
-.our-work p {
+#portfolio p {
 	font-size: 24px;
 }
 
-.our-work .grid li{
+#portfolio .grid li{
 	padding: 20px;
 	height: 350px;
 	border-radius: 3px;
@@ -280,18 +314,18 @@ a.btn{
 	background-color: #333;
 }
 
-.our-work .grid li.large{
+#portfolio .grid li.large{
 	flex-basis: 60%;
 	transition: 0.8s ease-in-out;
 }
 
-.our-work .grid li.large:hover {
-	height: 420px;
+#portfolio .grid li.large:hover {
+	height: 450px;
 }
 
 @media (max-width: 1000px){
 
-	.our-work .grid li.large{
+	#portfolio .grid li.large{
 		flex-basis: 100%;
 	}
 
@@ -303,30 +337,30 @@ a.btn{
  	Features Section
 ----------------------*/
 
-.features{
-	background-color: #A78B73;
+#services {
+
 }
 
-.features .grid li{
+#services .grid li{
 	padding: 0 30px;
 	flex-basis: 33%;
 	text-align: center;
 }
 
-.features .grid li i{
+#services .grid li i{
     font-size: 50px;
     color: #5A835D;
     margin-bottom: 25px;
 }
 
-.features .grid li h4{
+#services .grid li h4{
 	color: #515A70;
     font-size: 24px;
     margin-bottom: 25px;
     color: #1A2849;
 }
 
-.features .grid li p{
+#services .grid li p{
 	font-size: 22px;
     margin: 0;
 }
@@ -340,11 +374,11 @@ a.btn{
 	font-size: 24px;
 }
 
-.features .grid .smalli {
+#services .grid .smalli {
 	transition: 0.5s;
 }
 
-.features .grid .smalli:hover,
+#services .grid .smalli:hover,
 #largei:hover {
 	color: #1A2849;
 	transform: translate(0px, -20px);
@@ -362,12 +396,12 @@ a.btn{
 
 @media (max-width: 1000px){
 
-	.features .grid li{
+	#services .grid li{
 		flex-basis: 70%;
 		margin-bottom: 65px;
 	}
 
-	.features .grid li:last-child{
+	#services .grid li:last-child{
 		margin-bottom: 0;
 	}
 
@@ -383,7 +417,7 @@ a.btn{
 
 @media (max-width: 600px){
 
-	.features .grid li{
+	#services .grid li{
 		flex-basis: 100%;
 	}
 
@@ -395,37 +429,26 @@ a.btn{
  	Reviews Section
 --------------------*/
 
-.reviews{
 
+.reviews .title{
+	color: #364F38;
 }
 
 .reviews .quote{
 	text-align: center;
 	width: 80%;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 20px;
     padding: 0;
-}
-
-.reviews .author{
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-.reviews .author:last-child{
-    margin-bottom: 0;
+    color: #5A835D;
 }
 
 @media (max-width: 1000px){
 
 	.reviews .quote{
 		font-size: 20px;
-	}
-
-	.reviews .author{
-	    font-size: 16px;
 	}
 
 }
@@ -436,11 +459,15 @@ a.btn{
  	Contact Section
 ---------------------*/
 
-.contact .title {
+#contact {
+	background-color: #A78B73;
+}
+
+#contact .title {
 	font-size: 32px;
 }
 
-.contact form{
+#contact form{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -450,7 +477,7 @@ a.btn{
 	width: 80%;
 }
 
-.contact form input{
+#contact form input{
 	padding: 15px;
 	flex: 1;
 	margin-right: 30px;
@@ -458,14 +485,20 @@ a.btn{
 	color: #515A70;
 }
 
-.contact form .btn{
+#contact form .btn{
 	padding: 18px 42px;
 }
 
+.up {
+	padding: 5px 20px;
+	background-color: #D3C0AF;
+	border-radius: 1000px;
+	color: #fff;
+}
 
 @media (max-width: 800px){
 
-	.contact form input{
+	#contact form input{
 		flex-basis: 100%;
 		margin: 0 0 20px 0;
 	}
@@ -475,9 +508,18 @@ a.btn{
 	a.btn {
 		font-size: 16px;
 	}
-	.our-work p {
+	#portfolio p {
 	font-size: 16px;
 }
 
+	.reviews .title{
+		font-size: 32px;
+	}
 
+}
+
+@media (max-width: 419px) {
+	.reviews .title{
+		font-size: 24px;
+	}
 }
