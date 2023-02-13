@@ -291,9 +291,6 @@ a.btn{
 
 
 
-.оur-work{
-
-}
 
 #portfolio p {
 	font-size: 24px;
@@ -319,7 +316,15 @@ a.btn{
 	height: 450px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1308px){
+
+	#portfolio .grid li.large{
+		flex-basis: 90%;
+	}
+
+}
+
+@media (max-width: 1024px){
 
 	#portfolio .grid li.large{
 		flex-basis: 100%;
@@ -327,7 +332,52 @@ a.btn{
 
 }
 
+@media (max-width: 758px){
 
+
+
+}
+
+@media (max-width: 650px){
+
+	#portfolio .grid li.large:hover {
+	height: 400px;
+}
+
+	section {
+		padding: 100px 25px;
+	 }
+
+}
+
+@media (max-width: 550px){
+
+	#portfolio .grid li.large:hover {
+	height: 300px;
+}
+
+}
+
+@media (max-width: 480px){
+
+	#portfolio .grid li.large:hover {
+	height: 250px;
+}
+
+}
+
+
+@media (max-width: 400px){
+
+	#portfolio .grid li.large:hover {
+	height: 200px;
+}
+
+	section {
+		padding: 100px 5px;
+	 }
+
+}
 
 #services {
 
