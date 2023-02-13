@@ -372,6 +372,9 @@ a.btn{
 	#portfolio .grid li.large:hover {
 	height: 200px;
 }
+	#portfolio .grid li.large {
+	height: 200px;
+}
 
 	section {
 		padding: 100px 5px;
