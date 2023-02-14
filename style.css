@@ -202,6 +202,7 @@ hr {
 }
 .contacts h2 {
 	font-weight: 300;
+	argin-bottom: 25px;
 }
 .contacts a {
 	background: #2B3A66;
@@ -256,7 +257,7 @@ hr {
 	h1 {
 		font-size: 42px;
 	}
-	.home h2 {
+	.home a {
 		font-size: 32px;
 	}
 	.home__text p {
@@ -301,7 +302,7 @@ hr {
 	h2 {
 		font-size: 32px;
 	}
-	.home h2 {
+	.home a {
 		font-size: 20px;
 	}
 	.home__text p {
@@ -356,7 +357,7 @@ hr {
 	.home__text p {
 		font-size: 24px;
 	}
-	.home h2 {
+	.home a {
 		font-size: 20px;
 	}
 	.home__text p {
@@ -393,7 +394,7 @@ hr {
 	h1 {
 		font-size: 26px;
 	}
-	.home h2 {
+	.home a {
 		font-size: 20px;
 	}
 	.home__text p {
