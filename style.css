@@ -402,5 +402,11 @@ header {
 		width: 70%;
 		font-size: 20px;
 	}
+	.nav li {
+   		 margin: 0 10px;
+	}
+	.nav {
+  	  font-size: 20px;
+	}
 
 }
