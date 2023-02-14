@@ -323,6 +323,9 @@ header {
 	.contacts h2 {
 		font-size: 30px;
 	}
+	.nav {
+  	  font-size: 20px;
+	}
 }
 @media (max-width: 450px) {
 	h1 {
@@ -404,9 +407,6 @@ header {
 	}
 	.nav li {
    		 margin: 0 10px;
-	}
-	.nav {
-  	  font-size: 20px;
 	}
 
 }
