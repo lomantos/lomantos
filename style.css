@@ -4,7 +4,7 @@
 	margin: 0;
 }
 body {
-	background: black;
+	background: #101010;
 	color: white;
 	font-weight: 300;
 }
@@ -31,6 +31,16 @@ header {
 	margin: 0 auto;
 	padding: 50px 0px;
 }
+hr {
+	width: 75%;
+	height: 3px;
+	background: #2B2B2B;
+	border: none;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -38,6 +48,16 @@ header {
 }
 .nav li {
 	margin: 0 30px;
+	transition: .3s;
+}
+.nav li a {
+	transition: .3s;
+}
+.nav li a:hover {
+	opacity: 0.6;
+}
+.nav li a:active {
+	opacity: 0.2;
 }
 
 .home {
@@ -45,7 +65,7 @@ header {
 	width: 100%;
 	max-width: 1920px;
 	height: fit-content;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 	margin: 0 auto;
 	background-image: url(img/home.jpg);
 	background-repeat: no-repeat;
@@ -57,24 +77,27 @@ header {
 .home p {
 	width: fit-content;
 	font-size: 48px;
-	margin-top: 80px;
+	margin-top: 100px;
 }
 .home p span {
 	font-weight: bold;
 }
 .home h2 {
-	width: fit-content;
-	font-size: 36px;
-	padding: 15px 20px;
-	background: linear-gradient(90deg, rgba(17, 29, 64, 1), rgba(55, 25, 55, 1));
-	border-radius: 1000px;
-	box-shadow: inset 0 0 30px 0 rgba(72, 72, 72, 1);
-	transition: .3s;
 	margin-top: 50px;
+}
+.home__button {
+	font-size: 36px;
+	padding: 1.23% 1.56%;
+	background: #2B3A66;
+	border-radius: 20px;
+	transition: .3s;
 	font-weight: 300;
 }
-.home h2:hover {
-	box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 1);
+.home__button:hover {
+	padding: 1.23% 3.125%;
+}
+.home__button:active {
+	opacity: 0.8;
 }
 
 
@@ -88,9 +111,6 @@ header {
 	width: 100%;
 	max-width: 1920px;
 	height: fit-content;
-	background-image: url(img/about.jpg);
-	background-repeat: no-repeat;
-	background-position: right;
 }
 .about h1 {
 	margin: 0 auto;
@@ -108,11 +128,11 @@ header {
 	align-items: center;
 }
 .about__div__li {
-	background: rgba(255, 255, 255, 0.3);
+	background: #080808;
 	width: 45%;
 	height: 100%;
-	border-radius: 20px;
-	margin-bottom: 80px;
+	border-radius: 10px;
+	margin-bottom: 50px;
 	padding-bottom: 20px;
 }
 .about__div__ul {
@@ -128,9 +148,6 @@ header {
 	max-width: 1920px;
 	height: fit-content;
 	margin: 0 auto;
-	background-image: url(img/services.jpg);
-	background-repeat: no-repeat;
-	background-position: top center;
 }
 .services h1 {
 	margin: 0 auto;
@@ -145,13 +162,14 @@ header {
 }
 
 .services__div__li {
-	background: rgba(0, 0, 0, 0.8);
+	background: #878787;
 	width: 25%;
 	height: 100%;
-	border-radius: 50px;
-	margin-bottom: 80px;
+	border-radius: 10px;
+	margin-bottom: 50px;
 	padding: 40px 40px;
 	text-align: center;
+	color: black;
 }
 .services h4 {
 	font-size: 36px;
@@ -167,9 +185,6 @@ header {
 	max-width: 1920px;
 	height: fit-content;
 	margin: 0 auto;
-	background-image: url(img/contacts.jpg);
-	background-repeat: no-repeat;
-	background-position: top center;
 }
 .contacts__div {
 	width: 60%;
@@ -189,29 +204,17 @@ header {
 	font-weight: 300;
 }
 .contacts a {
-	background: rgba(55, 25, 55, 1);
-	padding: 5px 25px;
-	border-radius: 1000px;
-	box-shadow: inset 0 0 30px 0 rgba(223, 223, 223, 0.23);
+	background: #2B3A66;
+	padding: 10px 15px;
+	border-radius: 10px;
+	transition: .3s;
 }
-
-.top__img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	transform: translate(0, -50%);
-	width: 100%;
-	max-width: 1920px;
+.contacts a:hover {
+	padding: 10px 30px;
 }
-.bottom__img {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	transform: translate(0, 50%);
-	width: 100%;
-	max-width: 1920px;
+.contacts a:active {
+	opacity: 0.8;
 }
-
 
 
 @media (max-width: 1477px) {
@@ -245,6 +248,9 @@ header {
 	.contacts h2 {
 		font-size: 48px;
 	}
+	.home h2 {
+		border-radius: 10px;
+	}
 }
 @media (max-width: 740px) {
 	h1 {
@@ -264,7 +270,6 @@ header {
 	}
 	.services__div__li {
 		width: 90%;
-		padding: 20px;
 	}
 	.services h4 {
 		font-size: 26px;
@@ -310,7 +315,6 @@ header {
 	}
 	.services__div__li {
 		width: 100%;
-		margin-bottom: 25px;
 	}
 	.services h4 {
 		font-size: 22px;
@@ -326,7 +330,6 @@ header {
 	}
 	.services h1 {
 		margin: 0 auto;
-		padding: 25px 0;
 	}
 	.contacts__div {
 		justify-content: center;
@@ -340,6 +343,9 @@ header {
 	}
 	.nav {
   	  font-size: 20px;
+	}
+	.nav li {
+   		 margin: 0 10px;
 	}
 }
 @media (max-width: 450px) {
@@ -376,7 +382,6 @@ header {
 	}
 	.services h1 {
 		margin: 0 auto;
-		padding: 25px 0;
 	}
 	.contacts__div {
 		width: 60%;
@@ -414,14 +419,10 @@ header {
 	}
 	.services h1 {
 		margin: 0 auto;
-		padding: 25px 0;
 	}
 	.contacts__div {
 		width: 70%;
 		font-size: 20px;
-	}
-	.nav li {
-   		 margin: 0 10px;
 	}
 
 }
