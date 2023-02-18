@@ -161,7 +161,7 @@ hr {
     }
     
     .slider__line{
-        background-color: black;
+        background-color: #1E1E1E;
         display: flex;
         align-items: center;
         transition: all 1s;
@@ -176,7 +176,9 @@ hr {
         background-color: transparent;
         border: none;
     }
-    
+    .slider__img {
+    	border-radius: 10px;
+    }
     .slider__btn-next{
         position: absolute;
         right: 2%;
@@ -404,6 +406,9 @@ hr {
 		font-size: 20px;
 		border-radius: 7px;
 	}
+	.slider__img {
+    	border-radius: 7px;
+    }
 	.home__text p {
 		font-size: 28px;
 	}
