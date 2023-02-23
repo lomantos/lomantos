@@ -352,7 +352,7 @@ hr {
 		border-radius: 10px;
 	}
 }
-@media (max-width: 740px) {
+@media (max-width: 768px) {
 	h1 {
 		font-size: 42px;
 	}
@@ -390,6 +390,10 @@ hr {
 	.contacts h2 {
 		font-size: 36px;
 	}
+	.nav {
+		align-items: center;
+		flex-direction: column;
+	}	
 
 }
 @media (max-width: 630px) {
