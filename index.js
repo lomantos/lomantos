@@ -22,7 +22,6 @@ setInterval(() => {
     nextSlide()
 }, 10000);
 
-
 // Функции ==================
 // Задает нужную ширину картинки и sliderLine
 function showSlide() {
